@@ -12,8 +12,31 @@ de un segundo, al volver hacer click debe volver a estar en blanco y negro.
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
 
+ <img class="featured" src="assets/img/A1.jpg">
+
+<div class="gallery">
+<img class="thumb grey" src="assets/img/A1.jpg">
+<img class="thumb grey" src="assets/img/A2.jpg">
+<img class="thumb grey" src="assets/img/A3.jpg">
+<img class="thumb grey" src="assets/img/A4.jpg">
+<img class="thumb grey" src="assets/img/A5.jpg">
+<img class="thumb grey" src="assets/img/A6.jpg">
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+	$(".thumb").on("click", function(){
+		source = $(this).attr("src");
+		$(".featured").attr("src", source);
+		$(this).toggleClass("grey");
+	})
+
+
+</script>>
   </body>
 </html>

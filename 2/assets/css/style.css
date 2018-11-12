@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	text-align: center;
+	background-color: #120D1E;
+}
+
+.featured{
+  height:400px;
+  display: block;
+  margin: auto;
+  transition: 2s;
+}
+
+.gallery{
+  margin-top:20px;
+  text-align: center;
+}
+.thumb{
+  width:100px;
+  height:100px;
+}
+
+/*img:hover {
+  filter: none;
+  cursor: pointer;
+}
+*/
+
+img {
+  transition: 2s;
+}
+
+.grey {
+  filter: grayscale(100%);
+}
